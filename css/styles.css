@@ -2,13 +2,19 @@
   --primary-text-color: #757575;
   --title-text-color: #212121;
   --primary-color-link: #2196f3;
+  --white-color: #ffffff;
+  --black-color: #000000;
 }
 
 body {
-  background-color: #fff;
-  color: #757575;
+  background-color: var(--white-color);
+  color: var(--primary-text-color);
   font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
+  font-size: 14px;
+}
+a {
+  text-decoration: none;
 }
 
 ul {
@@ -20,33 +26,29 @@ ul {
 /* белый #FFFFFF */
 /* синий #2196F3 */
 /* вторичный цвет фона #F5F4FA */
+/* черный цвет  #000000 */
 
 /* site-nav */
 
 .logo {
-  color: #000000;
+  color: var(--black-color);
   font-family: Raleway, sans-serif;
   font-size: 26px;
   line-height: 1.2;
 }
 
-.logo:hover,
-.logo:focus {
-  color: var(--primary-text-color);
-}
-
 .logo-text {
   color: var(--primary-color-link);
+  text-decoration: none;
 }
 
 .site-nav .link {
-  color: #212121;
+  color: var(--primary-text-color);
 }
 
 .site-nav,
 .auth-nav {
   font-weight: 500;
-  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
@@ -73,7 +75,7 @@ ul {
 
 .hero {
   background-color: #2f303a;
-  color: #fff;
+  color: var(--white-color);
 }
 
 .hero-title {
@@ -87,7 +89,7 @@ ul {
 
 .button {
   background-color: var(--primary-color-link);
-  color: #fff;
+  color: var(--white-color);
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
@@ -111,6 +113,7 @@ ul {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
+  text-transform: uppercase;
 }
 
 .team-title {
@@ -135,7 +138,6 @@ ul {
 }
 
 .text {
-  font-size: 14px;
   line-height: 1.71;
 }
 
@@ -155,15 +157,18 @@ ul {
 
 .button-filter:hover,
 .button-filter:focus {
-  color: #fff;
+  color: var(--white-color);
   background-color: var(--primary-color-link);
 }
 
 /* footer */
 
 .logo-footer {
-  color: #fff;
+  color: var(--white-color);
   font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
 }
 
 .footer {
@@ -172,10 +177,15 @@ ul {
 
 .footer-nav .link {
   color: rgba(255, 255, 255, 0.6);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  font-style: normal;
 }
 
 .link-adress {
-  color: #fff;
+  color: var(--white-color);
+  font-style: normal;
 }
 
 .link-adress:hover,
