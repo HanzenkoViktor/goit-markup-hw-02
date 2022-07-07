@@ -43,7 +43,7 @@ ul {
 }
 
 .site-nav .link {
-  color: var(--primary-text-color);
+  color: var(--title-text-color);
 }
 
 .site-nav,
